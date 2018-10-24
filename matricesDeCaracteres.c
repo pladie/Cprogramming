@@ -34,16 +34,18 @@ void cargarMatC(char mati[F][C]){
     }
 
 }
+
 void imprimirMatC(char mati[F][C]){
     int f, c;
     for(f=0;f<F;f++){
-        printf(" %s  \n",mati[f]);
-        //for(c=0;c<C;c++){
-        //    printf("%3c",mati[f][c]);
-        //}
-        //printf("\n");
+        //printf(" %s  \n",mati[f]);
+        for(c=0;c<C;c++){
+            printf("%3c",mati[f][c]);
+        }
+        printf("\n");
     }
 }
+
 int aleatorio(int inf, int sup){
     return inf + (rand() % (sup-inf+1));
 }
